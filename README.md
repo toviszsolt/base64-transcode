@@ -72,15 +72,15 @@ console.log(encodedData); // "SGVsbG8gV29ybGQh"
 
 ## API documentation
 
-### `decode(base64: string, binary?: boolean): string | Uint8Array`
+- `decode(base64: string, binary?: boolean): string | Uint8Array`
 
-Decodes the base64 code. If the `binary` option is `true`, it returns a `Uint8Array`, otherwise a
-string.
+  Decodes the base64 code. If the `binary` option is `true`, it returns a `Uint8Array`, otherwise a
+  string.
 
-### `encode(str: string, binary?: boolean): string`
+- `encode(str: string, binary?: boolean): string`
 
-Encodes the given string into base64 code. If the `binary` option is `true`, it first converts it
-into a `Uint8Array`.
+  Encodes the given string into base64 code. If the `binary` option is `true`, it first converts it
+  into a `Uint8Array`.
 
 ## Guidelines
 
