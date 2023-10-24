@@ -2,6 +2,7 @@
 
 Base64 encoding and decoding for both **browser and node**, with **binary file** support.
 
+- [Why this package?](#why-this-package)
 - [Compatibility](#compatibility)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,6 +12,12 @@ Base64 encoding and decoding for both **browser and node**, with **binary file**
 - [API documentation](#api-documentation)
 - [Guidelines](#guidelines)
 - [License](#license)
+
+## Why this package?
+
+If you've ever done `base64` coding on the frontend side, I think you've noticed that `atob` and
+`btoa` methods are a problem with `utf-8` strings. This package solves the problem, plus, on the
+backend side, you can use the same package and syntax with `binary` files as well.
 
 ## Compatibility
 
