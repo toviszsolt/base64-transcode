@@ -2,6 +2,16 @@
 
 Base64 encoding and decoding for both **browser and node**, with **binary file** support.
 
+- [Compatibility](#compatibility)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [CommonJS](#commonjs)
+  - [ES Modules](#es-modules)
+  - [IIFE (Immediately Invoked Function Expression)](#iife-immediately-invoked-function-expression)
+- [API documentation](#api-documentation)
+- [Guidelines](#guidelines)
+- [License](#license)
+
 ## Compatibility
 
 This package supports `CommonJS`, `ES Modules`, and `IIFE` (Immediately Invoked Function Expression)
