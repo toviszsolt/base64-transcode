@@ -1,6 +1,6 @@
 {
   "name": "base64-transcode",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Base64 encoding and decoding for both browser and node, with binary file support.",
   "keywords": [
     "base64",
