@@ -1,0 +1,58 @@
+{
+  "name": "base64-transcode",
+  "version": "0.9.0",
+  "description": "Base64 encoding and decoding for both browser and node, with binary file support.",
+  "keywords": [
+    "base64"
+  ],
+  "main": "./dist/index.js",
+  "browser": "./dist/browser.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Zsolt Tovis",
+    "email": "tovis.zsolt@gmail.com",
+    "url": "https://toviszsolt.github.io/"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/toviszsolt"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/paypalme/toviszsolt"
+    }
+  ],
+  "homepage": "https://github.com/toviszsolt/base64-transcode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toviszsolt/base64-transcode"
+  },
+  "bugs": {
+    "url": "https://github.com/toviszsolt/base64-transcode/issues"
+  },
+  "scripts": {
+    "watch": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "rollup": "^4.1.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
