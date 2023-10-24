@@ -3,7 +3,18 @@
   "version": "0.9.0",
   "description": "Base64 encoding and decoding for both browser and node, with binary file support.",
   "keywords": [
-    "base64"
+    "base64",
+    "transcode",
+    "encode",
+    "decode",
+    "base64-encoding",
+    "base64-decoding",
+    "base64_encode",
+    "base64_decode",
+    "base64-transcode",
+    "browser",
+    "node",
+    "esm"
   ],
   "main": "./dist/index.js",
   "browser": "./dist/browser.js",
