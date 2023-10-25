@@ -1,3 +1,5 @@
+![base64-transode cover image](/assets/cover.png)
+
 # Base64 transcode
 
 Base64 encoding and decoding for both **browser and node**, with **binary file** support.
