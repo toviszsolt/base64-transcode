@@ -4,6 +4,7 @@ Base64 encoding and decoding for both **browser and node**, with **binary file**
 
 [![GitHub License](https://img.shields.io/github/license/toviszsolt/base64-transcode?style=flat)](https://github.com/toviszsolt/base64-transcode/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/base64-transcode?style=flat&color=red)](https://www.npmjs.com/package/base64-transcode)
+[![GitHub Repo stars](https://img.shields.io/github/stars/toviszsolt/base64-transcode?color=DAAA3F)](https://github.com/toviszsolt/base64-transcode/stargazers)
 [![Sponsor](https://img.shields.io/static/v1?label=sponsor&message=❤&color=ff69b4)](https://github.com/sponsors/toviszsolt)
 
 ![base64-transode cover image](/assets/cover.png)
