@@ -115,7 +115,7 @@ To learn about the guidelines, please read the [Code of Conduct](./CODE_OF_CONDU
 
 ## License
 
-MIT License @ 2022 [Zsolt Tövis](https://github.com/toviszsolt)
+MIT License @ 2023 [Zsolt Tövis](https://github.com/toviszsolt)
 
 If you found this project interesting, please consider supporting my open source work by
 [sponsoring me on GitHub](https://github.com/sponsors/toviszsolt) /
