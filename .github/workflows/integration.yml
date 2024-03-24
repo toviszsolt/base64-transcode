@@ -22,8 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - name: Install Jest
-        run: |
-          yarn install --production
-          yarn add @babel/preset-env @types/jest jest
+        run: yarn add @babel/preset-env @types/jest jest --production
       - name: Test
         run: yarn test
