@@ -16,6 +16,9 @@
     "node",
     "esm"
   ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "type": "commonjs",
   "main": "./dist/index.cjs",
   "browser": "./dist/browser.js",

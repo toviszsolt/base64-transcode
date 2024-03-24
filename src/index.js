@@ -1,8 +1,3 @@
-if (typeof btoa !== 'function' || typeof atob !== 'function') {
-  global.btoa = (data) => Buffer.from(data, 'binary').toString('base64');
-  global.atob = (data) => Buffer.from(data, 'base64').toString('binary');
-}
-
 const encode = (input) => {
   const bytes = ArrayBuffer.isView(input)
     ? new Uint8Array(input.buffer, input.byteOffset, input.byteLength)
