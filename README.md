@@ -24,20 +24,18 @@ Base64 encoding and decoding for both **browser and node**, with **binary file**
 
 ## Why this package?
 
-If you've ever done `base64` coding on the frontend side, I think you've noticed that `atob` and
-`btoa` methods are a problem with `utf-8` strings. This package solves the problem, plus, on the
-backend side, you can use the same package and syntax with `binary` files as well.
+If you've ever done `base64` coding on the frontend side, I think you've noticed that `atob` and `btoa` methods are a
+problem with `utf-8` strings. This package solves the problem, plus, on the backend side, you can use the same package
+and syntax with `binary` files as well.
 
 ## Compatibility
 
-This package supports `CommonJS`, `ES Modules`, and `IIFE` (Immediately Invoked Function Expression)
-formats. You can safely use both `require` and `import` statements in any environment. `TypeScript`
-also supported.
+This package supports `CommonJS`, `ES Modules`, and `IIFE` (Immediately Invoked Function Expression) formats. You can
+safely use both `require` and `import` statements in any environment. `TypeScript` also supported.
 
 ## Installation
 
-To get started with `base64-transcode`, you can install it using `yarn` or `npm` or load script in
-the browser:
+To get started with `base64-transcode`, you can install it using `yarn` or `npm` or load script in the browser:
 
 ```bash
 yarn add base64-transcode
@@ -98,15 +96,14 @@ console.log(encodedData); // "SGVsbG8gV29ybGQh"
 
 ## API documentation
 
-- `decode(base64: string, binary?: boolean): string | Uint8Array`
+- `decode(base64: string, toBuffer?: boolean): string | Uint8Array | Buffer`
 
-  Decodes the base64 code. If the `binary` option is `true`, it returns a `Uint8Array`, otherwise a
-  string.
+  Decodes the base64 code. If the `toBuffer` option is `true`, it returns a `Uint8Array` in browser and `Buffer` in
+  node.js, otherwise a string.
 
-- `encode(str: string, binary?: boolean): string`
+- `encode(input: string | Uint8Array | Buffer): string`
 
-  Encodes the given string into base64 code. If the `binary` option is `true`, it first converts it
-  into a `Uint8Array`.
+  Encodes the given string into base64 code.
 
 ## Guidelines
 
