@@ -11,6 +11,8 @@ Base64 encoding and decoding for both **browser and node**, with **binary file**
 
 ![base64-transode cover image](/assets/cover.png)
 
+[![Edit base64-transcode](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/base64-transcode-tdglqd?file=%2Fsrc%2FApp.js%3A18%2C25)
+
 ## Table of Contents
 
 - [Why this package?](#why-this-package)
