@@ -38,6 +38,9 @@ describe('Base64.decode', () => {
     const compareContent = fs.readFileSync('test/assets/sample.jpg.base64');
     expect(Base64.decode(compareContent)).toBe(fileContent.toString());
 
+    fs.writeFileSync('test/assets/sample-decoded.jpg', Base64.decode(compareContent, true));
+    expect(fs.readFileSync('test/assets/sample-decoded.jpg')).toEqual(fileContent);
+
     Buffer = undefined;
     expect(Base64.decode(fileContent.toString('base64'), true)).toEqual(new Uint8Array(fileContent));
     Buffer = BufferOriginal;
