@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
+      - name: Remove all packages
+        run: yarn remove *
       - name: Install Jest
         run: yarn add -D @babel/preset-env @types/jest jest
       - name: Test
