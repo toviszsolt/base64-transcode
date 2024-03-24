@@ -31,18 +31,20 @@ describe('Base64.decode', () => {
 
   it('decode file content', () => {
     const BufferOriginal = Buffer;
-    const fileContent = fs.readFileSync('test/assets/sample.jpg');
-    expect(Base64.decode(fileContent.toString('base64'))).toBe(fileContent.toString());
-    expect(Base64.decode(fileContent.toString('base64'), true)).toEqual(fileContent);
+    const bufferSampleJpg = fs.readFileSync('test/assets/sample.jpg');
+    const base64SampleJpg = bufferSampleJpg.toString('base64');
+    expect(Base64.decode(base64SampleJpg)).toBe(bufferSampleJpg.toString());
+    expect(Base64.decode(base64SampleJpg, true)).toEqual(bufferSampleJpg);
 
-    const compareContent = fs.readFileSync('test/assets/sample.jpg.base64');
-    expect(Base64.decode(compareContent)).toBe(fileContent.toString());
+    const base64Content = fs.readFileSync('test/assets/sample.jpg.base64').toString();
+    expect(Base64.decode(base64Content, true)).toEqual(bufferSampleJpg);
 
-    fs.writeFileSync('test/assets/sample-decoded.jpg', Base64.decode(compareContent, true));
-    expect(fs.readFileSync('test/assets/sample-decoded.jpg')).toEqual(fileContent);
+    fs.writeFileSync('test/assets/sample-decoded.jpg', Base64.decode(base64Content, true));
+    expect(fs.readFileSync('test/assets/sample-decoded.jpg')).toEqual(bufferSampleJpg);
 
     Buffer = undefined;
-    expect(Base64.decode(fileContent.toString('base64'), true)).toEqual(new Uint8Array(fileContent));
+    const ArrayBuffer = new Uint8Array(bufferSampleJpg);
+    expect(Base64.decode(base64SampleJpg, true)).toEqual(ArrayBuffer);
     Buffer = BufferOriginal;
   });
 });
